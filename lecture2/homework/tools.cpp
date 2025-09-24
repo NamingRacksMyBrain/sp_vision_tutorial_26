@@ -1,7 +1,6 @@
 #include "tools.hpp"
 #include <fmt/core.h>
 
-// 修正：添加 targetSize 参数，并修改为使用参数而不是硬编码的640
 ResizeParams resizeAndCenterImage(const cv::Mat& input_image, cv::Mat& output_image, int targetSize) {
     ResizeParams params;
     params.original_width = input_image.cols;
