@@ -4,8 +4,7 @@ find_package(yaml-cpp REQUIRED)
 
 # 创建目标 io
 add_library(io STATIC 
-    hikrobot/hikrobot.cpp
-    camera.cpp
+    my_camera.cpp
 )
 
 # hikrobot

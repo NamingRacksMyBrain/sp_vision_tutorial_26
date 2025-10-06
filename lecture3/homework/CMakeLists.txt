@@ -24,5 +24,7 @@ add_subdirectory(tasks)
 add_subdirectory(tools)
 
 add_executable(main main.cpp)
+add_executable(example io/example.cpp)
 
 target_link_libraries(main ${OpenCV_LIBS} fmt::fmt yaml-cpp tools io auto_aim)
+target_link_libraries(example ${OpenCV_LIBS} io)
